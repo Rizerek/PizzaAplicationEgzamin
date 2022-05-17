@@ -22,7 +22,7 @@ public class SizeEntity {
     @Column(name = "price")
     private BigDecimal price;
     @Column(name = "pizza_id")
-    private Integer pizza_id;
+    private Integer pizzaId;
     @OneToMany(mappedBy = "size")
     private Set<SizeDto> orderSizes;
 
@@ -55,11 +55,11 @@ public class SizeEntity {
     }
 
     public Integer getPizzaId() {
-        return pizza_id;
+        return pizzaId;
     }
 
     public void setPizzaId(Integer pizzaId) {
-        this.pizza_id = pizza_id;
+        this.pizzaId = pizzaId;
     }
 
     public Set<SizeDto> getOrderSizes() {
